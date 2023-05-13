@@ -3,11 +3,11 @@ function v=encodeCycliCode2(u,g)
 %delta= u(x) *x^n-k
 %Example G=[1101],M=[1001],[1101]
 %poly2sym convert polynomial to symbol =>
-u=fliplr(u)
+
 ux=poly2sym(u)
 gx=poly2sym(g)
 k=length(u);
-% vector start 1
+%vector start 1
 polypowers=find(g)-1;
 paritybits=max(polypowers);
 n=paritybits+k;
